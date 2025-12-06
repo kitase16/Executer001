@@ -13,7 +13,7 @@
 struct Executer {
 	std::size_t Pointer = 0;
 	//typedef std::int8_t INSLong;
-	enum class INS { None, jmp, No, x, I21, x0N, lb, push, pop, reg, mem, zero, one, exe, ret, bel, uld, scl, norn, None, min, max,fwd,ack ,up,dwn};
+	enum class INS { None, jmp, No, x, I21, x0N, lb, push, pop, reg, mem, zero, one, exe, ret, bel, uld, scl, norn, None, min, max,fwd,ack ,up,dwn,yld,nue,stop};
 	enum class x86 { None, jmp, No, x, I21, x8N, add, sub, mul, div, mod, And, Or, Nand, Nor, Xor, Not, Eq, LOAD, STORE, DATA,up,dwn, };
 	enum class x68 { None, jmp, No, x, I21, x6N,up,dwn, Ab, Ba, Ac, Bc, Ca, Cb, A, B, C, Xc,Cx,X,NI,NF,Ni,NM,NCi,NCf,NCii,NCif,NCfi,NMi,NMf, };
 	std::deque<INS> seque;
