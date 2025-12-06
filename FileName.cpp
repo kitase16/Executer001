@@ -28,7 +28,7 @@ struct Executer {
 		std::mt19973 Rnd;
 		typedef std::deque<std::deque< std::deque<std::deque<std::deque<std::deque< std::deque<std::deque<short>>>>>>>> Dim;
 		Dim D;
-		std::deque<std::size_t> Indexes;
+		std::deque<std::size_t> Indexes; 
 	};
 
 	struct SubCuter {
