@@ -48,7 +48,7 @@ struct Executer {
 		const char r[Sz];
 	};
 
-	Fase ase[2], ase[3],ase[40],ase[80],ase[120];
+	Fase ase[2], ase[3],ase[4],ase[40],ase[80],ase[120];
 	std::deque < std::deque < std::size_t>> Tbl;
 };
 
