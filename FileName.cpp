@@ -14,21 +14,21 @@
 struct Executer {
 	std::size_t Pointer = 0;
 	//typedef std::int8_t INSLong;
-	enum class INS { None, jmp, No, x, I21, x0N, lb, push, pop, reg, mem, zero, one, exe, ret, bel, uld, scl, norn, None, min, max,fwd,ack ,up,dwn,yld,nue,stop,just,stamp};
-	enum class x86 { None, jmp, No, x, I21, x8N, add, sub, mul, div, mod, And, Or, Nand, Nor, Xor, Not, Eq, LOAD, STORE, DATA,up,dwn,stomp};
-	enum class x68 { None, jmp, No, x, I21, x6N,up,dwn, Ab, Ba, Ac, Bc, Ca, Cb, A, B, C,D,N, Xc,Cx,X,NI,NF,Ni,NM,NCi,NCf,NCii,NCif,NCfi,NMi,NMf, flash,ld,sr};
+	enum class INS { None, jmp, No, x, I21, x0N, lb, push, pop, reg, mem, zero, one, exe, ret, bel, uld, scl, norn, None, min, max, fwd, ack, up, dwn, yld, nue, stop, just, stamp };
+	enum class x86 { None, jmp, No, x, I21, x8N, add, sub, mul, div, mod, And, Or, Nand, Nor, Xor, Not, Eq, LOAD, STORE, DATA, up, dwn, stomp };
+	enum class x68 { None, jmp, No, x, I21, x6N, up, dwn, Ab, Ba, Ac, Bc, Ca, Cb, A, B, C, D, N, Xc, Cx, X, NI, NF, Ni, NM, NCi, NCf, NCii, NCif, NCfi, NMi, NMf, flash, ld, sr };
 	std::deque<INS> seque;
 	typedef std::int8_t byte;
 	std::deque<byte> Data;
 	std::intmax_t DatIdx = 0;
-	std::function<std::deque<Executer::INS>(Executer& ,Executer::INS)> Exeri = [](auto& e,INS I)->std::deque<Exeuter::INS> {return { Exeuter::INS::None }; };
+	std::function<std::deque<Executer::INS>(Executer&, Executer::INS)> Exeri = [](auto& e, INS I)->std::deque<Exeuter::INS> {return { Exeuter::INS::None }; };
 	std::intmax_t X = 0;//register.
 
 	struct LeftBack {
 		std::mt19973 Rnd;
 		typedef std::deque<std::deque< std::deque<std::deque<std::deque<std::deque< std::deque<std::deque<short>>>>>>>> Dim;
 		Dim D;
-		std::deque<std::size_t> Indexes; 
+		std::deque<std::size_t> Indexes;
 	};
 
 	struct SubCuter {
@@ -45,7 +45,7 @@ struct Executer {
 
 	struct Fase {
 		static const std::intmax_t Sz = 40;
-		char r[Sz];
+		const char r[Sz];
 	};
 
 	Fase ase[2], ase[3];
