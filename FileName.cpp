@@ -19,6 +19,7 @@ struct Executer {
 	std::deque<INS> seque;
 	typedef std::int8_t byte;
 	std::deque<byte> Data;
+	std::intmax_t DatIdx = 0;
 	std::function<std::deque<Executer::INS>(Executer& ,Executer::INS)> Exeri = [](auto& e,INS I)->std::deque<Exeuter::INS> {return { Exeuter::INS::None }; };
 	std::intmax_t X = 0;//register.
 
